@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ordini',
+    'delivery',
     'api'
 ]
 
@@ -112,3 +113,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MATERIAL_ADMIN_SITE = {
+    'HEADER':  "Speats",  # Admin site header
+    'TITLE':  "Speats",  # Admin site title
+}
+
+
+GOOGLE_MAPS_API_KEY = ''
