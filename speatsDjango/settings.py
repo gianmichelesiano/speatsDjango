@@ -17,7 +17,7 @@ SECRET_KEY = '#_hyk&_im5g1wkz0n(3+y1#xswq9nhy65f@f1yr(!ssu$pm@uj'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['bc666262.ngrok.io', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['speats.pythonanywhere.com', 'bc666262.ngrok.io', 'localhost', '127.0.0.1']
 
 # Application definition
 
