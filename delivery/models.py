@@ -2,6 +2,8 @@ from django.db import models
 from django_google_maps import fields as map_fields
 from decimal import Decimal
 
+
+
 class Consegne(models.Model):
     consegna_id = models.AutoField(primary_key=True)
     data_consegna = models.DateTimeField(auto_now_add=True)
@@ -10,9 +12,16 @@ class Consegne(models.Model):
     citta = models.CharField(
                     max_length=20,
                     choices=[
-                        ('Schlieren', 'Schlieren'),
-                        ('Urdorf', 'Urdorf'),
+                        ('Bergdietikon', 'Bergdietikon'),                       
                         ('Dietikon', 'Dietikon'),
+                        ('Fahrweid', 'Fahrweid'),
+                        ('Geroldswil', 'Geroldswil'),
+                        ('Oberengstringen', 'Oberengstringen'),
+                        ('Schlieren', 'Schlieren'),
+                        ('Spreitenbach', 'Spreitenbach'),
+                        ('Unterengstringen', 'Unterengstringen'),       
+                        ('Urdorf', 'Urdorf'),
+                        ('Weiningen', 'Weiningen'),
                         ('Zurigo', 'Zurigo'),
                     ],
                     default='Schlieren',
